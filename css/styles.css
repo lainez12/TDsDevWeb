@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+:root{
+    --var1: 1rem;
+}
+
+html {
+    font-size: 62.5%;   
+}
+
+body {
+    background-color: #838892;
+    width: 600px;
+    font-size: 1.6rem;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: 'Croissant One';
+    text-align: center;
+    background-color: turquoise;
+}
+
+h2#titre-amis {
+    background-color: tomato    ;
+}
+
+h3 {
+    background-color: tomato;
+}
+
+h3#titre-sport, h3#titre-vingt {
+    background-color: turquoise;
+}
+
+span {
+    color: red;
+}
+
+strong {
+    font-style: italic;
+    font-weight: 300;
+}
+
+
+
+/*chuck-jeune img*/
+img.chuck-jeune {
+    width: 170px;
+}
+
+img.chuck-Beware {
+    width: 400px;
+}
