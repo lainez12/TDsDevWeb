@@ -20,6 +20,44 @@ body {
     margin: 0 auto;
 }
 
+/*Header styles*/
+
+header {
+    background-color: white;
+    padding: 25px 0px 0px 15px;
+    display: flex;
+    align-items: end;
+}
+
+nav {
+    background-color: #5BBDBF;
+    height: 50px;
+    width: 75%;
+}
+
+nav ul {
+    display: flex;
+    padding-inline-start: 0px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #c0d5c2;
+    padding: 0 10px;
+    border-left: 2px solid black;
+}
+
+ul li:first-child a {
+    border-left: none;
+}
+
+/*Geneal styles*/
+
+li {
+    list-style: none;
+}
+
+
 h2 {
     font-family: 'Croissant One';
     text-align: center;
