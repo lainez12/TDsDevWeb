@@ -15,10 +15,13 @@ html {
 
 body {
     background-color: #838892;
-    width: 600px;
+    width: 900px;
     font-size: 1.6rem;
     margin: 0 auto;
 }
+
+/*Geneal styles*/
+
 
 /*Header styles*/
 
@@ -38,6 +41,13 @@ nav {
 nav ul {
     display: flex;
     padding-inline-start: 0px;
+    height: 66%;
+}
+
+nav ul li {
+    height: 100%;
+    width: 100px;
+    list-style: none;
 }
 
 nav li a {
@@ -45,16 +55,62 @@ nav li a {
     color: #c0d5c2;
     padding: 0 10px;
     border-left: 2px solid black;
+    font-size: 1.8rem;
+    height: 100%;
+    display: inline-block;
 }
 
 ul li:first-child a {
     border-left: none;
 }
 
-/*Geneal styles*/
+ul li:hover .submenu{
+    display: block;
+}
 
-li {
-    list-style: none;
+.submenu {
+    display: none;
+    position: relative;
+    bottom: -1px;
+    background-color: green;
+}
+
+li .submenu div {
+    margin: 0px 0px 10px 0px;
+}
+
+li .submenu div a span {
+    opacity: 0;
+}
+
+li .submenu div a {
+    border: none;
+    font-size: 1.4rem;
+}
+
+li .submenu div a:hover {
+    color: yellow;
+}
+
+li .submenu div a:hover span {
+    opacity: 1;
+}
+
+/* Main */
+
+main {
+    display: flex;
+}
+
+article#colo2 {
+    width: 60%;
+    background-color: #ccc;
+}
+
+aside {
+    width: 35%;
+    margin-left: 5%;
+    background-color: #ccc;
 }
 
 
@@ -117,6 +173,24 @@ img.chuck-Beware {
 }
 
 /*Styles to Table*/
+
+table#table {
+    overflow-x: scroll;
+    white-space: nowrap;
+    border-spacing: 0px;
+    display: block;
+}
+table#table th:first-child,
+table#table td:first-child {
+    position: sticky;
+    left: 0;
+    border-right: 1px solid #000; 
+}
+
+table#table th:first-child {
+    z-index: 1;
+    background-color: #00AAFF;
+}
 
 thead  {
     background-color: #00AAFF;
