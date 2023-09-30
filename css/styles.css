@@ -1,9 +1,9 @@
-* {
+/** {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     
-}
+}*/
 
 :root{
     --var1: 1rem;
@@ -27,15 +27,20 @@ h2 {
 }
 
 h2#titre-amis {
-    background-color: tomato    ;
+    background-color: tomato;
 }
 
 h3 {
     background-color: tomato;
+    border: 1px solid #ccc;
 }
 
 h3#titre-sport, h3#titre-vingt {
     background-color: turquoise;
+}
+
+p {
+    margin: 30px 0px;
 }
 
 span {
@@ -47,13 +52,64 @@ strong {
     font-weight: 300;
 }
 
+/* Padding aux titres*/
+
+section h2,
+div h3 {
+    padding: 10px 0px;
+}
+
 
 
 /*chuck-jeune img*/
 img.chuck-jeune {
-    width: 170px;
+    height: 150px;
+    float: left;
+    margin: 0px 7px 7px 0px;
+}
+
+/*séparer les paragraphes des images*/
+.paragrapheAseparer {
+    clear: both;
 }
 
 img.chuck-Beware {
     width: 400px;
+    float: right;
+}
+
+/*Styles to Table*/
+
+thead  {
+    background-color: #00AAFF;
+}
+
+table span.skill  {
+    color: #640051;
+    padding: 0px 5px;
+}
+
+tbody tr:nth-child(2) td,
+tbody tr:nth-child(4) td,
+tbody tr:nth-child(6) td{
+    background-color: #ccc;
+}
+
+tbody tr:nth-child(1) td, 
+tbody tr:nth-child(3) td,
+tbody tr:nth-child(5) td,
+tbody tr:nth-child(7) td{
+    background-color: white;
+}
+
+tbody tr:nth-child(1) td:nth-child(2) {
+    text-align: center;
+}
+
+/* Icons position*/
+
+#iconSocial {
+    position: fixed;
+    right: 15px;
+    top: 95%;
 }
