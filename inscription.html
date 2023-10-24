@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="/css/stylesIncription.css">
+</head>
+<body>
+    <main>
+        <form action="sendToMySecondYearInIut.php" method="post">
+            <fieldset>
+                <legend>Personnelles</legend>
+                <label for="surname">
+                    <span>Nom *</span>
+                    <input id="surname" name="surname" type="text" tabindex="0" required>
+                </label>
+                <label for="firstName">
+                    <span>Prénom</span>
+                    <input id="firstName" name="firstName" type="text">
+                </label>
+                <label for="sex">
+                    <span>Sexe</span>
+                    <input id="sex" name="sex" list="sexes">
+                    <datalist id="sexes">
+                        <option value="Famel"></option>
+                        <option value="Male"></option>
+                        <option value="Binary-Computer"></option>
+                    </datalist>
+                </label>
+                <label for="birthday">
+                    <span>Date de naissance</span>
+                    <input type="date" name="birthday" id="birthday">
+                </label>
+                <label for="email">
+                    <span>Courrie electronique *</span>
+                    <input type="email" name="email" id="email" placeholder="yourmail@domain.com" required>
+                </label>
+                <label for="Pays">
+                    <span>Pays d'origine</span>
+                    <select name="Pays" id="Pays">
+                        <option value="FRANCE">FRANCE</option>
+                        <option value="USA">USA</option>
+                        <option value="CHINE">CHINE</option>
+                        <option value="VIÊTNAM">VIÊTNAM</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Combat</legend>
+                <label for="karateNivel">
+                    <span>Niveau de Karte</span>
+                    <input type="number" name="karateNivel" id="karateNivel" min="1" max="5">
+                </label>
+                <label for="ArtMartiaux">
+                    <span>Art Martiaux Prefere</span>
+                    <select name="ArtMartiaux" id="ArtMartiaux">
+                        <option value="Kung fu">Kung fu</option>
+                        <option value="Karaté">Karaté</option>
+                        <option value="Full-contact">Full-contact</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Inscription</legend>
+                <label for="password" >
+                    <span>Mot de passe *</span>
+                    <input type="password" name="password" id="password" autofocus required pattern="">
+                </label>
+                <label for="MessagesChuck">
+                    <textarea name="MessagesChuck" id="MessagesChuck" cols="30" rows="10" placeholder="Un inscrit sera tiré au sort, et verra son message transmis à Chuck Norris.">
+                    </textarea>
+                </label>
+                <label for="Engagement">
+                    <span>Niveau d'Engagement</span>
+                    <input list="Engagement" name="" id="">
+                    <datalist id="Engagement">
+                        <option value="Basique (5 €)">Basique (5 €)</option>
+                        <option value="Gold (15 €)">Gold (15 €)</option>
+                        <option value="Tatane in your face (50 €)">Tatane in your face (50 €)</option>
+                    </datalist>
+                </label>
+                <label for="clauses">
+                    <input type="checkbox" name="clauses" id="clauses" required>
+                    <span>J’ai bien lu les clauses que je n’ai pas lues *</span>
+                </label>
+            </fieldset>
+            <input type="submit" value="Envoyer">
+        </form>
+    </main>
+</body>
+</html>
